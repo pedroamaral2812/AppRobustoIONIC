@@ -1,3 +1,5 @@
+import { RadioPage } from './../pages/radio/radio';
+import { CheckboxPage } from './../pages/checkbox/checkbox';
 import { BotoesPage } from './../pages/botoes/botoes';
 import { BadgesPage } from './../pages/badges/badges';
 import { AlertPage } from './../pages/alert/alert';
@@ -16,7 +18,7 @@ import { CardPage } from '../pages/card/card';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =   CardPage; //HomePage;
+  rootPage: any =  RadioPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -31,6 +33,8 @@ export class MyApp {
       {title: "Badges", component: BadgesPage},
       {title: "Botoes", component: BotoesPage},
       {title: "Cartões", component: CardPage},
+      {title: "Checkbox", component: CheckboxPage},
+      {title: "Radio", component: RadioPage}
     ];
 
   }

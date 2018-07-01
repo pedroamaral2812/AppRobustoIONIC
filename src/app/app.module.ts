@@ -1,3 +1,5 @@
+import { RadioPage } from './../pages/radio/radio';
+import { CheckboxPage } from './../pages/checkbox/checkbox';
 import { BotoesPage } from './../pages/botoes/botoes';
 import { AlertPage } from './../pages/alert/alert';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
@@ -20,7 +22,9 @@ import { CardPage } from '../pages/card/card';
     AlertPage,
     BadgesPage,
     BotoesPage,
-    CardPage
+    CardPage,
+    CheckboxPage,
+    RadioPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { CardPage } from '../pages/card/card';
     AlertPage,
     BadgesPage,
     BotoesPage,
-    CardPage
+    CardPage,
+    CheckboxPage,
+    RadioPage
   ],
   providers: [
     StatusBar,
