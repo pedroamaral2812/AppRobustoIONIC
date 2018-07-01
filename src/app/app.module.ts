@@ -1,3 +1,4 @@
+import { BotoesPage } from './../pages/botoes/botoes';
 import { AlertPage } from './../pages/alert/alert';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,8 @@ import { BadgesPage } from '../pages/badges/badges';
     HomePage,
     ActionSheetPage,
     AlertPage,
-    BadgesPage
+    BadgesPage,
+    BotoesPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { BadgesPage } from '../pages/badges/badges';
     HomePage,
     ActionSheetPage,
     AlertPage,
-    BadgesPage
+    BadgesPage,
+    BotoesPage
   ],
   providers: [
     StatusBar,

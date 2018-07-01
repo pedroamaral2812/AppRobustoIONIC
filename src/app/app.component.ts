@@ -1,3 +1,4 @@
+import { BotoesPage } from './../pages/botoes/botoes';
 import { BadgesPage } from './../pages/badges/badges';
 import { AlertPage } from './../pages/alert/alert';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
@@ -14,7 +15,7 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = BotoesPage; //HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       {title: 'ActionSheet', component: ActionSheetPage},
       {title: 'Alert', component: AlertPage},
-      {title: "Badges", component: BadgesPage}
+      {title: "Badges", component: BadgesPage},
+      {title: "Botoes", component: BotoesPage}
     ];
 
   }
