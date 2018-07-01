@@ -1,3 +1,4 @@
+import { RangePage } from './../pages/range/range';
 import { RadioPage } from './../pages/radio/radio';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
 import { BotoesPage } from './../pages/botoes/botoes';
@@ -24,7 +25,8 @@ import { CardPage } from '../pages/card/card';
     BotoesPage,
     CardPage,
     CheckboxPage,
-    RadioPage
+    RadioPage,
+    RangePage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { CardPage } from '../pages/card/card';
     BotoesPage,
     CardPage,
     CheckboxPage,
-    RadioPage
+    RadioPage,
+    RangePage
   ],
   providers: [
     StatusBar,
