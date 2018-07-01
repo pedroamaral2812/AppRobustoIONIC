@@ -1,3 +1,4 @@
+import { TdateTimePage } from './../pages/tdate-time/tdate-time';
 import { RangePage } from './../pages/range/range';
 import { RadioPage } from './../pages/radio/radio';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
@@ -19,7 +20,7 @@ import { CardPage } from '../pages/card/card';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  RangePage;
+  rootPage: any =  TdateTimePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -36,7 +37,8 @@ export class MyApp {
       {title: "Cartões", component: CardPage},
       {title: "Checkbox", component: CheckboxPage},
       {title: "Radio", component: RadioPage},
-      {title: "Range", component: RangePage}
+      {title: "Range", component: RangePage},
+      {title: "TdateTime", component: TdateTimePage}
     ];
 
   }

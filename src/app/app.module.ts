@@ -14,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BadgesPage } from '../pages/badges/badges';
 import { CardPage } from '../pages/card/card';
+import { TdateTimePage } from '../pages/tdate-time/tdate-time';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardPage } from '../pages/card/card';
     CardPage,
     CheckboxPage,
     RadioPage,
-    RangePage
+    RangePage,
+    TdateTimePage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { CardPage } from '../pages/card/card';
     CardPage,
     CheckboxPage,
     RadioPage,
-    RangePage
+    RangePage,
+    TdateTimePage
   ],
   providers: [
     StatusBar,
