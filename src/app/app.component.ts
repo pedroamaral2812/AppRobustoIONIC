@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { CardPage } from '../pages/card/card';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = BotoesPage; //HomePage;
+  rootPage: any =   CardPage; //HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,7 +29,8 @@ export class MyApp {
       {title: 'ActionSheet', component: ActionSheetPage},
       {title: 'Alert', component: AlertPage},
       {title: "Badges", component: BadgesPage},
-      {title: "Botoes", component: BotoesPage}
+      {title: "Botoes", component: BotoesPage},
+      {title: "Cartões", component: CardPage},
     ];
 
   }

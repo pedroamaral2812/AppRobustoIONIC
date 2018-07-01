@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BadgesPage } from '../pages/badges/badges';
+import { CardPage } from '../pages/card/card';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BadgesPage } from '../pages/badges/badges';
     ActionSheetPage,
     AlertPage,
     BadgesPage,
-    BotoesPage
+    BotoesPage,
+    CardPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { BadgesPage } from '../pages/badges/badges';
     ActionSheetPage,
     AlertPage,
     BadgesPage,
-    BotoesPage
+    BotoesPage,
+    CardPage
   ],
   providers: [
     StatusBar,
