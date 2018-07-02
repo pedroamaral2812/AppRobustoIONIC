@@ -1,3 +1,4 @@
+import { ListPage } from './../pages/list/list';
 import { FabPage } from './../pages/fab/fab';
 import { TdateTimePage } from './../pages/tdate-time/tdate-time';
 import { RangePage } from './../pages/range/range';
@@ -23,7 +24,7 @@ import { InputPage } from '../pages/input/input';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  InputPage;
+  rootPage: any =  ListPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -44,7 +45,8 @@ export class MyApp {
       {title: "TdateTime", component: TdateTimePage},
       {title: "Fab", component: FabPage},
       {title: "GRID", component: GridPage},
-      {title: "Input", component: InputPage}
+      {title: "Input", component: InputPage},
+      {title: "List", component: ListPage}
     ];
 
   }

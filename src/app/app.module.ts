@@ -1,3 +1,4 @@
+import { ListPage } from './../pages/list/list';
 import { InputPage } from './../pages/input/input';
 import { GridPage } from './../pages/grid/grid';
 import { FabPage } from './../pages/fab/fab';
@@ -9,7 +10,7 @@ import { AlertPage } from './../pages/alert/alert';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, List } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -34,7 +35,8 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     TdateTimePage,
     FabPage,
     GridPage,
-    InputPage
+    InputPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,8 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     TdateTimePage,
     FabPage,
     GridPage,
-    InputPage
+    InputPage,
+    ListPage
   ],
   providers: [
     StatusBar,
