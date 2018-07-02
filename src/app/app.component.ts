@@ -1,3 +1,5 @@
+import { LoadingPage } from './../pages/loading/loading';
+import { TooglePage } from './../pages/toogle/toogle';
 import { ListPage } from './../pages/list/list';
 import { FabPage } from './../pages/fab/fab';
 import { TdateTimePage } from './../pages/tdate-time/tdate-time';
@@ -17,6 +19,7 @@ import { HomePage } from '../pages/home/home';
 import { CardPage } from '../pages/card/card';
 import { GridPage } from '../pages/grid/grid';
 import { InputPage } from '../pages/input/input';
+import { ToastPage } from '../pages/toast/toast';
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +27,7 @@ import { InputPage } from '../pages/input/input';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  ListPage;
+  rootPage: any =  ToastPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -46,7 +49,10 @@ export class MyApp {
       {title: "Fab", component: FabPage},
       {title: "GRID", component: GridPage},
       {title: "Input", component: InputPage},
-      {title: "List", component: ListPage}
+      {title: "List", component: ListPage},
+      {title: "Toogle", component: TooglePage},
+      {title: "Loading", component: LoadingPage},
+      {title: "Toast", component: ToastPage}
     ];
 
   }

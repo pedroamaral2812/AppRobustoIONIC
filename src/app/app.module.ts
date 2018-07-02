@@ -1,3 +1,6 @@
+import { ToastPage } from './../pages/toast/toast';
+import { LoadingPage } from './../pages/loading/loading';
+import { TooglePage } from './../pages/toogle/toogle';
 import { ListPage } from './../pages/list/list';
 import { InputPage } from './../pages/input/input';
 import { GridPage } from './../pages/grid/grid';
@@ -20,6 +23,7 @@ import { BadgesPage } from '../pages/badges/badges';
 import { CardPage } from '../pages/card/card';
 import { TdateTimePage } from '../pages/tdate-time/tdate-time';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -36,7 +40,10 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     FabPage,
     GridPage,
     InputPage,
-    ListPage
+    ListPage,
+    TooglePage,
+    LoadingPage,
+    ToastPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,10 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     FabPage,
     GridPage,
     InputPage,
-    ListPage
+    ListPage,
+    TooglePage,
+    LoadingPage,
+    ToastPage
   ],
   providers: [
     StatusBar,
