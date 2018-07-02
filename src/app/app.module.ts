@@ -1,3 +1,6 @@
+import { InputPage } from './../pages/input/input';
+import { GridPage } from './../pages/grid/grid';
+import { FabPage } from './../pages/fab/fab';
 import { RangePage } from './../pages/range/range';
 import { RadioPage } from './../pages/radio/radio';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
@@ -28,7 +31,10 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     CheckboxPage,
     RadioPage,
     RangePage,
-    TdateTimePage
+    TdateTimePage,
+    FabPage,
+    GridPage,
+    InputPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,10 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     CheckboxPage,
     RadioPage,
     RangePage,
-    TdateTimePage
+    TdateTimePage,
+    FabPage,
+    GridPage,
+    InputPage
   ],
   providers: [
     StatusBar,

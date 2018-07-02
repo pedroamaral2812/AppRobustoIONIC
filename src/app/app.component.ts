@@ -1,3 +1,4 @@
+import { FabPage } from './../pages/fab/fab';
 import { TdateTimePage } from './../pages/tdate-time/tdate-time';
 import { RangePage } from './../pages/range/range';
 import { RadioPage } from './../pages/radio/radio';
@@ -13,6 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { CardPage } from '../pages/card/card';
+import { GridPage } from '../pages/grid/grid';
+import { InputPage } from '../pages/input/input';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +23,7 @@ import { CardPage } from '../pages/card/card';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  TdateTimePage;
+  rootPage: any =  InputPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -38,7 +41,10 @@ export class MyApp {
       {title: "Checkbox", component: CheckboxPage},
       {title: "Radio", component: RadioPage},
       {title: "Range", component: RangePage},
-      {title: "TdateTime", component: TdateTimePage}
+      {title: "TdateTime", component: TdateTimePage},
+      {title: "Fab", component: FabPage},
+      {title: "GRID", component: GridPage},
+      {title: "Input", component: InputPage}
     ];
 
   }
