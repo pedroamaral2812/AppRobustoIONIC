@@ -1,3 +1,5 @@
+import { Pagina1Page } from './../pages/pagina1/pagina1';
+import { PaginaPrincipalPage } from './../pages/pagina-principal/pagina-principal';
 import { TabsPage } from './../pages/tabs/tabs';
 import { SegmentPage } from './../pages/segment/segment';
 import { ToolbarPage } from './../pages/toolbar/toolbar';
@@ -26,6 +28,8 @@ import { BadgesPage } from '../pages/badges/badges';
 import { CardPage } from '../pages/card/card';
 import { TdateTimePage } from '../pages/tdate-time/tdate-time';
 import { SelectPage } from '../pages/select/select';
+import { Pagina2PageModule } from '../pages/pagina2/pagina2.module';
+import { Pagina2Page } from '../pages/pagina2/pagina2';
 
 
 @NgModule({
@@ -51,7 +55,10 @@ import { SelectPage } from '../pages/select/select';
     ToolbarPage,
     SegmentPage,
     TabsPage,
-    SelectPage
+    SelectPage,
+    PaginaPrincipalPage,
+    Pagina1Page,
+    Pagina2Page
   ],
   imports: [
     BrowserModule,
@@ -80,7 +87,10 @@ import { SelectPage } from '../pages/select/select';
     ToolbarPage,
     SegmentPage,
     TabsPage,
-    SelectPage
+    SelectPage,
+    PaginaPrincipalPage,
+    Pagina1Page,
+    Pagina2Page
   ],
   providers: [
     StatusBar,

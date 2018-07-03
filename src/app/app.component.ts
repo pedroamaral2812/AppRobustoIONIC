@@ -1,3 +1,4 @@
+import { PaginaPrincipalPage } from './../pages/pagina-principal/pagina-principal';
 import { SelectPage } from './../pages/select/select';
 import { ToolbarPage } from './../pages/toolbar/toolbar';
 import { LoadingPage } from './../pages/loading/loading';
@@ -31,7 +32,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  SelectPage;
+  rootPage: any =  HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -60,7 +61,8 @@ export class MyApp {
       {title: "Toolbar", component: ToolbarPage},
       {title: "Segment", component: SegmentPage},
       {title: "Tabs", component: TabsPage},
-      {title: "Select", component: SelectPage}
+      {title: "Select", component: SelectPage},
+      {title: "Navegação", component: PaginaPrincipalPage}
     ];
 
   }
