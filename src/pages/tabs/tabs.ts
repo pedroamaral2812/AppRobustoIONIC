@@ -1,8 +1,11 @@
+import { ToastPage } from './../toast/toast';
+import { CardPage } from './../card/card';
+import { BotoesPage } from './../botoes/botoes';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the SegmentPage page.
+ * Generated class for the TabsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +13,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-segment',
-  templateUrl: 'segment.html',
+  selector: 'page-tabs',
+  templateUrl: 'tabs.html',
 })
-export class SegmentPage {
-  selectOptions : any;
+export class TabsPage {
+
+  botoesPage = BotoesPage;
+  cardPage   = CardPage;
+  toastPage  = ToastPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    this.selectOptions = {
-      title : 'Frutas frescas',
-      subTitle: 'Selecione a fruta mais doce',
-      mode: 'md'      
-    };
+  
   }
 
 }

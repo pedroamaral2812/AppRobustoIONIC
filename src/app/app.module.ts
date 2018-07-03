@@ -1,3 +1,4 @@
+import { TabsPage } from './../pages/tabs/tabs';
 import { SegmentPage } from './../pages/segment/segment';
 import { ToolbarPage } from './../pages/toolbar/toolbar';
 import { ToastPage } from './../pages/toast/toast';
@@ -24,6 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { BadgesPage } from '../pages/badges/badges';
 import { CardPage } from '../pages/card/card';
 import { TdateTimePage } from '../pages/tdate-time/tdate-time';
+import { SelectPage } from '../pages/select/select';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     LoadingPage,
     ToastPage,
     ToolbarPage,
-    SegmentPage
+    SegmentPage,
+    TabsPage,
+    SelectPage
   ],
   imports: [
     BrowserModule,
@@ -74,7 +78,9 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     LoadingPage,
     ToastPage,
     ToolbarPage,
-    SegmentPage
+    SegmentPage,
+    TabsPage,
+    SelectPage
   ],
   providers: [
     StatusBar,
