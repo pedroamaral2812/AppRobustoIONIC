@@ -1,3 +1,5 @@
+import { SegmentPage } from './../pages/segment/segment';
+import { ToolbarPage } from './../pages/toolbar/toolbar';
 import { ToastPage } from './../pages/toast/toast';
 import { LoadingPage } from './../pages/loading/loading';
 import { TooglePage } from './../pages/toogle/toogle';
@@ -43,7 +45,9 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     ListPage,
     TooglePage,
     LoadingPage,
-    ToastPage
+    ToastPage,
+    ToolbarPage,
+    SegmentPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,9 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
     ListPage,
     TooglePage,
     LoadingPage,
-    ToastPage
+    ToastPage,
+    ToolbarPage,
+    SegmentPage
   ],
   providers: [
     StatusBar,

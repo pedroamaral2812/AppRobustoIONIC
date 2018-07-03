@@ -1,3 +1,4 @@
+import { ToolbarPage } from './../pages/toolbar/toolbar';
 import { LoadingPage } from './../pages/loading/loading';
 import { TooglePage } from './../pages/toogle/toogle';
 import { ListPage } from './../pages/list/list';
@@ -20,6 +21,7 @@ import { CardPage } from '../pages/card/card';
 import { GridPage } from '../pages/grid/grid';
 import { InputPage } from '../pages/input/input';
 import { ToastPage } from '../pages/toast/toast';
+import { SegmentPage } from '../pages/segment/segment';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +29,7 @@ import { ToastPage } from '../pages/toast/toast';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  ToastPage;
+  rootPage: any =  SegmentPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -52,7 +54,9 @@ export class MyApp {
       {title: "List", component: ListPage},
       {title: "Toogle", component: TooglePage},
       {title: "Loading", component: LoadingPage},
-      {title: "Toast", component: ToastPage}
+      {title: "Toast", component: ToastPage},
+      {title: "Toolbar", component: ToolbarPage},
+      {title: "Segment", component: SegmentPage}
     ];
 
   }
