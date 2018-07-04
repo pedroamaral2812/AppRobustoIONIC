@@ -1,3 +1,6 @@
+import { Camera } from '@ionic-native/camera';
+import { CameraPage } from './../pages/camera/camera';
+import { EstilizacaoPage } from './../pages/estilizacao/estilizacao';
 import { Pagina1Page } from './../pages/pagina1/pagina1';
 import { PaginaPrincipalPage } from './../pages/pagina-principal/pagina-principal';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -58,7 +61,9 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     SelectPage,
     PaginaPrincipalPage,
     Pagina1Page,
-    Pagina2Page
+    Pagina2Page,
+    EstilizacaoPage,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -90,12 +95,15 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     SelectPage,
     PaginaPrincipalPage,
     Pagina1Page,
-    Pagina2Page
+    Pagina2Page,
+    EstilizacaoPage,
+    CameraPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera
   ]
 })
 export class AppModule {}

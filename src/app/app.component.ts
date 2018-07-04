@@ -1,3 +1,5 @@
+import { CameraPage } from './../pages/camera/camera';
+import { EstilizacaoPage } from './../pages/estilizacao/estilizacao';
 import { PaginaPrincipalPage } from './../pages/pagina-principal/pagina-principal';
 import { SelectPage } from './../pages/select/select';
 import { ToolbarPage } from './../pages/toolbar/toolbar';
@@ -32,7 +34,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  HomePage;
+  rootPage: any =  CameraPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -62,7 +64,9 @@ export class MyApp {
       {title: "Segment", component: SegmentPage},
       {title: "Tabs", component: TabsPage},
       {title: "Select", component: SelectPage},
-      {title: "Navegação", component: PaginaPrincipalPage}
+      {title: "Navegação", component: PaginaPrincipalPage},
+      {title: "Estilização", component: EstilizacaoPage},
+      {title:"Camara", component: CameraPage}
     ];
 
   }
