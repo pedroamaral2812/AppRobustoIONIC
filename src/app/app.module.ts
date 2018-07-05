@@ -1,3 +1,5 @@
+import { Geolocation } from '@ionic-native/geolocation';
+import { LocalizacaoPage } from './../pages/localizacao/localizacao';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { BarcodePage } from './../pages/barcode/barcode';
 import { Camera } from '@ionic-native/camera';
@@ -66,7 +68,8 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     Pagina2Page,
     EstilizacaoPage,
     CameraPage,
-    BarcodePage
+    BarcodePage,
+    LocalizacaoPage
   ],
   imports: [
     BrowserModule,
@@ -101,14 +104,16 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     Pagina2Page,
     EstilizacaoPage,
     CameraPage,
-    BarcodePage
+    BarcodePage,
+    LocalizacaoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Camera,
-    BarcodeScanner
+    BarcodeScanner,
+    Geolocation
   ]
 })
 export class AppModule {}
