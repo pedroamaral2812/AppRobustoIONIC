@@ -1,3 +1,4 @@
+import { BarcodePage } from './../pages/barcode/barcode';
 import { CameraPage } from './../pages/camera/camera';
 import { EstilizacaoPage } from './../pages/estilizacao/estilizacao';
 import { PaginaPrincipalPage } from './../pages/pagina-principal/pagina-principal';
@@ -34,7 +35,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  CameraPage;
+  rootPage: any =  BarcodePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -66,7 +67,8 @@ export class MyApp {
       {title: "Select", component: SelectPage},
       {title: "Navegação", component: PaginaPrincipalPage},
       {title: "Estilização", component: EstilizacaoPage},
-      {title:"Camara", component: CameraPage}
+      {title:"Camara", component: CameraPage},
+      {title:"BarCode", component: BarcodePage}
     ];
 
   }

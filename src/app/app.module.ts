@@ -1,3 +1,5 @@
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { BarcodePage } from './../pages/barcode/barcode';
 import { Camera } from '@ionic-native/camera';
 import { CameraPage } from './../pages/camera/camera';
 import { EstilizacaoPage } from './../pages/estilizacao/estilizacao';
@@ -63,7 +65,8 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     Pagina1Page,
     Pagina2Page,
     EstilizacaoPage,
-    CameraPage
+    CameraPage,
+    BarcodePage
   ],
   imports: [
     BrowserModule,
@@ -97,13 +100,15 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     Pagina1Page,
     Pagina2Page,
     EstilizacaoPage,
-    CameraPage
+    CameraPage,
+    BarcodePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Camera
+    Camera,
+    BarcodeScanner
   ]
 })
 export class AppModule {}
