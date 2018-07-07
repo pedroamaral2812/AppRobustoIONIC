@@ -1,3 +1,4 @@
+import { CepPage } from './../pages/cep/cep';
 import { LocalizacaoPage } from './../pages/localizacao/localizacao';
 import { BarcodePage } from './../pages/barcode/barcode';
 import { CameraPage } from './../pages/camera/camera';
@@ -36,7 +37,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =  LocalizacaoPage;
+  rootPage: any =  CepPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -70,7 +71,8 @@ export class MyApp {
       {title: "Estilização", component: EstilizacaoPage},
       {title:"Camara", component: CameraPage},
       {title:"BarCode", component: BarcodePage},
-      {title:"Localizcao", component: LocalizacaoPage}
+      {title:"Localizcao", component: LocalizacaoPage},
+      {title: "CEP", component: CepPage}
     ];
 
   }

@@ -1,3 +1,4 @@
+import { CepPage } from './../pages/cep/cep';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LocalizacaoPage } from './../pages/localizacao/localizacao';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -37,6 +38,8 @@ import { TdateTimePage } from '../pages/tdate-time/tdate-time';
 import { SelectPage } from '../pages/select/select';
 import { Pagina2PageModule } from '../pages/pagina2/pagina2.module';
 import { Pagina2Page } from '../pages/pagina2/pagina2';
+import { CepProvider } from '../providers/cep/cep';
+import {HttpModule } from "@angular/http";
 
 
 @NgModule({
@@ -69,10 +72,12 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     EstilizacaoPage,
     CameraPage,
     BarcodePage,
-    LocalizacaoPage
+    LocalizacaoPage,
+    CepPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -105,7 +110,8 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     EstilizacaoPage,
     CameraPage,
     BarcodePage,
-    LocalizacaoPage
+    LocalizacaoPage,
+    CepPage
   ],
   providers: [
     StatusBar,
@@ -113,7 +119,8 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Camera,
     BarcodeScanner,
-    Geolocation
+    Geolocation,
+    CepProvider
   ]
 })
 export class AppModule {}
